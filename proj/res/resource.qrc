@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainImage.png</file>
+        <file>images/help-about.png</file>
+        <file>images/menu-languages.png</file>
+        <file>images/program-exit.png</file>
+        <file>images/program-windows.png</file>
+    </qresource>
+</RCC>

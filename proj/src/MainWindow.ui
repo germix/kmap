@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Program">
+    <property name="title">
+     <string>&amp;Program</string>
+    </property>
+    <widget class="QMenu" name="menu_Windows">
+     <property name="title">
+      <string>&amp;Windows</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/resource.qrc">
+       <normaloff>:/images/program-windows.png</normaloff>:/images/program-windows.png</iconset>
+     </property>
+    </widget>
+    <addaction name="actionProgramExit"/>
+    <addaction name="separator"/>
+    <addaction name="menu_Windows"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionHelpAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu_Options">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <widget class="QMenu" name="menu_Languages">
+     <property name="title">
+      <string>&amp;Languages</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/resource.qrc">
+       <normaloff>:/images/menu-languages.png</normaloff>:/images/menu-languages.png</iconset>
+     </property>
+    </widget>
+    <addaction name="menu_Languages"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettingsShowZeros"/>
+    <addaction name="actionSettingsShowCellAddress"/>
+   </widget>
+   <addaction name="menu_Program"/>
+   <addaction name="menu_Options"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionProgramExit">
+   <property name="icon">
+    <iconset resource="../res/resource.qrc">
+     <normaloff>:/images/program-exit.png</normaloff>:/images/program-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="actionHelpAbout">
+   <property name="icon">
+    <iconset resource="../res/resource.qrc">
+     <normaloff>:/images/help-about.png</normaloff>:/images/help-about.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionSettingsShowZeros">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show zeros</string>
+   </property>
+  </action>
+  <action name="actionSettingsShowCellAddress">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show cell address</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../res/resource.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>slotAction()</slot>
+ </slots>
+</ui>
